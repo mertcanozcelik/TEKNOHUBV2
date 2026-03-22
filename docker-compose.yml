@@ -1,0 +1,14 @@
+
+version: '3.8'
+services:
+  otag-frontend:
+    build: .
+    container_name: otag_hub_web
+    ports:
+      - "8080:80"
+    environment:
+      - VITE_SUPABASE_URL=${SUPABASE_URL}
+      - VITE_SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+    restart: always
+
+# İleride buraya 'supabase-self-hosted' servisleri eklenebilir.

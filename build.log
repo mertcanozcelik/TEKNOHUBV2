@@ -1,0 +1,39 @@
+Processing 348 rows...
+Loading model (Xenova/multilingual-e5-base)...
+Model loaded.
+Processed 0 / 348
+Processed 10 / 348
+Processed 20 / 348
+Processed 30 / 348
+Processed 40 / 348
+Processed 50 / 348
+Processed 60 / 348
+Processed 70 / 348
+Processed 80 / 348
+Processed 90 / 348
+Processed 100 / 348
+Processed 110 / 348
+Processed 120 / 348
+Processed 130 / 348
+Processed 140 / 348
+Processed 150 / 348
+Processed 160 / 348
+Processed 170 / 348
+Processed 180 / 348
+Processed 190 / 348
+Processed 200 / 348
+Processed 210 / 348
+Processed 220 / 348
+Processed 230 / 348
+Processed 240 / 348
+Processed 250 / 348
+Processed 260 / 348
+Processed 270 / 348
+Processed 280 / 348
+Processed 290 / 348
+Processed 300 / 348
+Processed 310 / 348
+Processed 320 / 348
+Processed 330 / 348
+Processed 340 / 348
+Successfully saved embeddings to src/data/taxonomy_embeddings.json

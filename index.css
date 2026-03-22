@@ -1,0 +1,85 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 font-sans text-slate-900 antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Akademik Rapor Tipografisi */
+.prose-academic p {
+  @apply mb-6 text-slate-600 leading-[1.85] text-[1.05rem] font-normal text-justify;
+}
+
+.prose-academic h2 {
+  @apply text-2xl font-black text-slate-900 mt-12 mb-6 tracking-tight border-b pb-2 border-slate-100;
+}
+
+.prose-academic h3 {
+  @apply text-lg font-bold text-blue-700 mt-8 mb-4 uppercase tracking-wide;
+}
+
+/* Print Engine */
+@media print {
+  @page {
+    margin: 2cm;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  header, aside, .print\:hidden, button, form, .sticky, .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .prose-academic {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  p, div, li {
+    font-size: 11pt !important;
+    color: black !important;
+  }
+
+  h1 { font-size: 22pt !important; margin-bottom: 10pt !important; }
+  h2 { font-size: 16pt !important; border-bottom: 1px solid #eee !important; margin-top: 20pt !important; }
+  h3 { font-size: 13pt !important; color: black !important; }
+
+  .bg-white { background: white !important; }
+  .shadow-2xl { box-shadow: none !important; }
+  .border { border: none !important; }
+}
